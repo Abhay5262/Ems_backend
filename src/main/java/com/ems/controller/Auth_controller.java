@@ -36,7 +36,7 @@ public class Auth_controller {
 	{
 		try {
 			projectUserDetails.setRole(loginRequest.getRole());
-			System.err.println(loginRequest);
+//			System.err.println(loginRequest);
 			authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
 			
 		} catch (Exception e) {
